@@ -6,11 +6,19 @@
 /*   By: sllabres <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 15:50:25 by sllabres          #+#    #+#             */
-/*   Updated: 2025/11/12 15:51:42 by sllabres         ###   ########.fr       */
+/*   Updated: 2025/11/12 16:14:16 by sandomin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+int	ft_putstr(str)
+{
+	while (str[i])
+	{
+		i++;
+	}
+	return(i);
+}
 
 int	main(void)
 {
