@@ -1,32 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minishell.c                                        :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sllabres <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/12 15:50:25 by sllabres          #+#    #+#             */
-/*   Updated: 2025/11/12 16:14:30 by sllabres         ###   ########.fr       */
+/*   Created: 2025/11/12 16:12:42 by sllabres          #+#    #+#             */
+/*   Updated: 2025/11/12 16:14:10 by sllabres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <unistd.h>
 
-void	ft_putstr(char *str)
+void	ft_putchar(char c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
-}
-
-int	main(void)
-{
-	printf("%s", "Hola Mundo!");
-	return (0);
+	write(1, &c, 1);
 }
